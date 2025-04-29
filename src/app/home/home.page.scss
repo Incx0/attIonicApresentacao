@@ -1,27 +1,62 @@
-#container {
-  text-align: center;
-
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 50%;
-  transform: translateY(-50%);
+.container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 0 40px 0;
+  height: 100%;
+  justify-content: space-between;
+  background-image: url("../../assets/img/fundopica.jpg");
+  background-size: cover;
 }
-
-#container strong {
-  font-size: 20px;
-  line-height: 26px;
+#divUser{
+  width: 80%;
+  -webkit-box-shadow: 10px 10px 12px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 10px 10px 12px 0px rgba(0,0,0,0.75);
+  box-shadow: 10px 10px 12px 0px rgba(0,0,0,0.75);
 }
-
-#container p {
-  font-size: 16px;
-  line-height: 22px;
-
-  color: #8c8c8c;
-
+#divUserSimpleInfo{
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: space-evenly;
+}
+#pUserSInfo{
   margin: 0;
 }
 
-#container a {
-  text-decoration: none;
+ion-item{
+  --border-radius: 5px;
+}
+
+#divWB{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  width: 85%;
+  
+}
+#h1WB{
+  width: 95%;
+}
+#ionCardWB{
+  --width: 100%;
+  -webkit-box-shadow: 10px 10px 12px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 10px 10px 12px 0px rgba(0,0,0,0.75);
+  box-shadow: 10px 10px 12px 0px rgba(0,0,0,0.75);
+}
+
+
+#ICard1{
+  height: 200px;
+  width: 95%;
+  -webkit-box-shadow: 10px 10px 12px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 10px 10px 12px 0px rgba(0,0,0,0.75);
+  box-shadow: 10px 10px 12px 0px rgba(0,0,0,0.75);
+}
+#ICardCont1{
+  width: 90%;
+  height: 100px;
+  overflow-y: auto;
 }

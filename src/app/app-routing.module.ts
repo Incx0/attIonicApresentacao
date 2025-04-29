@@ -11,6 +11,26 @@ const routes: Routes = [
     redirectTo: 'home',
     pathMatch: 'full'
   },
+  {
+    path: 'etapa1',
+    loadChildren: () => import('./apresentacao/etapa1/etapa1.module').then( m => m.Etapa1PageModule)
+  },
+  {
+    path: 'etapa2',
+    loadChildren: () => import('./apresentacao/etapa2/etapa2.module').then( m => m.Etapa2PageModule)
+  },
+  {
+    path: 'etapa3',
+    loadChildren: () => import('./apresentacao/etapa3/etapa3.module').then( m => m.Etapa3PageModule)
+  },
+  {
+    path: 'apresentacao',
+    loadChildren: () => import('./apresentacao/apresentacao.module').then( m => m.ApresentacaoPageModule)
+  },
+  {
+    path: 'devacess',
+    loadChildren: () => import('./devacess/devacess.module').then( m => m.DevacessPageModule)
+  },
 ];
 
 @NgModule({

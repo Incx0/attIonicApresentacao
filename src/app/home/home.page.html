@@ -1,20 +1,87 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Blank
-    </ion-title>
-  </ion-toolbar>
-</ion-header>
-
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
+<!-- Conteúdo do menu expansivel -->
+<ion-menu contentId="main-content">
+  <ion-header>
     <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
+      <ion-title>Menu</ion-title>
     </ion-toolbar>
   </ion-header>
+  <ion-content class="ion-padding">This is the menu content.</ion-content>
+</ion-menu>
 
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
+<div class="ion-page" id="main-content">
+  <ion-header>
+    <ion-toolbar>
+      <!-- btn do menu expansivel -->
+      <ion-buttons slot="start">
+        <ion-menu-button></ion-menu-button>
+      </ion-buttons>
+      <ion-title>Página Inicial</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <div class="container">
+    <div id="divUser">
+      <ion-item lines="none">
+        <ion-avatar aria-hidden="true" slot="start">
+          <img alt="" src="https://ionicframework.com/docs/img/demos/avatar.svg" />
+        </ion-avatar>
+        <div id="divUserSimpleInfo">
+          <ion-label>Wall-E</ion-label>
+          <p id="pUserSInfo"><ion-icon name="location-outline"></ion-icon>Criciúma-SC</p>
+        </div>
+      </ion-item>
+    </div>
+    <div id="divWB">
+      <h1 id="h1WB">Bem-vindo de volta!</h1>
+      <ion-card id="ionCardWB">
+        <ion-card-header>
+          <ion-card-title>O que faremos hoje?</ion-card-title>
+          <ion-card-subtitle>temos muitas novidades</ion-card-subtitle>
+        </ion-card-header>
+        <ion-card-content>
+          Here's a small text description for the card content. Nothing more, nothing less.
+        </ion-card-content>
+      </ion-card>
+      <ion-card id="ICard1">
+        <ion-card-header>
+          <ion-card-title>Card Title</ion-card-title>
+          <ion-card-subtitle>Card Subtitle</ion-card-subtitle>
+        </ion-card-header>
+        <ion-card-content id="ICardCont1">
+          <ion-list>
+            <ion-item>
+              <ion-thumbnail slot="start">
+                <img alt="Silhouette of mountains" src="https://ionicframework.com/docs/img/demos/thumbnail.svg" />
+              </ion-thumbnail>
+              <ion-label>Item</ion-label>
+            </ion-item>
+      
+            <ion-item>
+              <ion-thumbnail slot="start">
+                <img alt="Silhouette of mountains" src="https://ionicframework.com/docs/img/demos/thumbnail.svg" />
+              </ion-thumbnail>
+              <ion-label>Item</ion-label>
+            </ion-item>
+      
+            <ion-item>
+              <ion-thumbnail slot="start">
+                <img alt="Silhouette of mountains" src="https://ionicframework.com/docs/img/demos/thumbnail.svg" />
+              </ion-thumbnail>
+              <ion-label>Item</ion-label>
+            </ion-item>
+      
+            <ion-item lines="none">
+              <ion-thumbnail slot="start">
+                <img alt="Silhouette of mountains" src="https://ionicframework.com/docs/img/demos/thumbnail.svg" />
+              </ion-thumbnail>
+              <ion-label>Item</ion-label>
+            </ion-item>
+            <ion-infinite-scroll>
+              <ion-infinite-scroll-content></ion-infinite-scroll-content>
+            </ion-infinite-scroll>
+          </ion-list>
+        </ion-card-content>
+      </ion-card>
+    </div>
   </div>
-</ion-content>
+  <ion-content class="ion-padding"></ion-content>
+</div>
